@@ -22,6 +22,6 @@ function Triangle(x, y, s, a, colors)
 		if(dist(x, y, this.pos[0] + this.r * cos(this.angle    ), this.pos[1] + this.r * sin(this.angle    )) < 1.5*this.r
 		&& dist(x, y, this.pos[0] + this.r * cos(this.angle+120), this.pos[1] + this.r * sin(this.angle+120)) < 1.5*this.r
 		&& dist(x, y, this.pos[0] + this.r * cos(this.angle+240), this.pos[1] + this.r * sin(this.angle+240)) < 1.5*this.r)
-			this.color = this.color+1 % this.colors.length;
+			this.color = (this.color+1) % this.colors.length;
 	};
 }

@@ -60,4 +60,5 @@ document.addEventListener("click", function(){
 	for(let t of triangles)
 		word.push(t.color);
 	console.log(word);
+	console.log(listToWord(word));
 });
