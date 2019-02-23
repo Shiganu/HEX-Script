@@ -2,4 +2,4 @@
 
 ## TODO:
 - [X] Visual representation input
-- [ ] Visual representation to word conversion
+- [X] Visual representation to word conversion
