@@ -1,4 +1,5 @@
 # HEX-Script
 
 ## TODO:
-- [ ] Visual represetasion to word conversion
+- [ ] Visual representation input
+- [ ] Visual representation to word conversion
