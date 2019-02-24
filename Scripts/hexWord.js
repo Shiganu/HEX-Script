@@ -52,4 +52,11 @@ function HexWord(x, y, r, tr, colors)
             word.push(t.color);
         return word;
     };
+
+    this.loadWord = function(word)
+    {
+        let list = wordToList(word);
+        for(let i = 0; i < this.triangles.length; i++)
+            this.triangles[i].color = list[i];
+    };
 }

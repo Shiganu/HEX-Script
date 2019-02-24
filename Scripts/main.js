@@ -17,13 +17,6 @@ function main()
 
 requestAnimationFrame(main);
 
-function loadWord(word)
-{
-	let list = wordToList(word);
-	for(let i = 0; i < 24; i++)
-		triangles[i].color = list[i];
-}
-
 document.addEventListener("click", function(){
 	let mouseX = arguments[0].clientX;
 	let mouseY = arguments[0].clientY;
