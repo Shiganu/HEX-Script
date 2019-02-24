@@ -1,5 +1,6 @@
 # HEX-Script
 
 ## TODO:
-- [X] Visual representation input
-- [X] Visual representation to word conversion
+- [X] Triangles input
+- [X] Triangles to word conversion
+- [X] Word to triangles conversion
