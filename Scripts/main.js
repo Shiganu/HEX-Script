@@ -12,6 +12,9 @@ function main()
 
 	hexWord.draw();
 
+	wordDisplay.innerHTML = listToWord(hexWord.getWord());
+	wordDisplay.style.left = px(Math.round(width/2-wordDisplay.clientWidth/2));
+
 	requestAnimationFrame(main);
 }
 

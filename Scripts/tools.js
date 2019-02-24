@@ -17,3 +17,10 @@ cvs.width = str(width);
 cvs.height = str(height);
 cvs.style.width = px(width);
 cvs.style.height = px(height);
+
+let wordDisplay = document.createElement("div");
+document.body.appendChild(wordDisplay);
+wordDisplay.style.fontFamily = "Monospace";
+wordDisplay.style.fontSize = "50px";
+wordDisplay.style.position = "absolute";
+wordDisplay.style.top = "15px";
