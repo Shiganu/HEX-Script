@@ -3,6 +3,7 @@ let triangles = [];
 let r = 100;
 let triR = 80;
 let colors = ["#00ff00", "#ff0000", "#ffffff"];
+let word = [];
 
 for(let i = 0; i < 3; i++)
 {
@@ -49,6 +50,13 @@ function main()
 
 requestAnimationFrame(main);
 
+function loadWord(word)
+{
+	let list = wordToList(word);
+	for(let i = 0; i < 24; i++)
+		triangles[i].color = list[i];
+}
+
 document.addEventListener("click", function(){
 	let mouseX = arguments[0].clientX;
 	let mouseY = arguments[0].clientY;
@@ -56,9 +64,7 @@ document.addEventListener("click", function(){
 	for(let t of triangles)
 		t.click(mouseX, mouseY);
 
-	let word = [];
+	word = [];
 	for(let t of triangles)
 		word.push(t.color);
-	console.log(word);
-	console.log(listToWord(word));
 });

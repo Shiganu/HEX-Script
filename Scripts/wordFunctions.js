@@ -52,3 +52,20 @@ function listToWord(list)
 		   checkConsonant(str.substring(16, 22)) +
 		   checkVowel(str.substring(22, 24));
 }
+
+function wordToList(word)
+{
+	let str = "";
+	for(let l of word)
+	{
+		if(vovels[l.toUpperCase()] !== undefined) str += vovels[l.toUpperCase()];
+		else if(consonants[l.toUpperCase()] !== undefined) str += consonants[l.toUpperCase()];
+		else str += "#";
+	}
+
+	let list = [];
+	for(let n of str)
+		list.push(Number(n));
+	
+	return list;
+}
