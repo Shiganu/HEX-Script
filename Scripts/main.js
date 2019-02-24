@@ -29,6 +29,9 @@ for(let i = 0; i < 3; i++)
 	));
 }
 
+for(let t of triangles)
+	word.push(t.color);
+
 /*for(let i = 0; i < triangles.length; i++)
 {
 	triangles[i].colors = ["#"+Math.round(225/24*i).toString(16)+Math.round(225/24*i).toString(16)+Math.round(225/24*i).toString(16)];
